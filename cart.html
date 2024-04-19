@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terratrucks - Panier</title>
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <a href="./index.html" title="Accueil">
+            <img src="./assets/logo-h.png" alt="Terratrucks" class="header__logo">
+        </a>
+        <form method="GET" action="./index.html" class="header__search">
+            <button type="submit"><span class="material-symbols-rounded">search</span></button>
+            <input name="search" id="search" type="text" placeholder="Rechercher...">
+            <select name="category" id="category">
+                <option value="">Filtrer</option>
+                <option value="Cat 1">Pelle</option>
+                <option value="Cat 2">Chariot</option>
+                <option value="Cat 3">Nacelle</option>
+                <option value="Cat 4">Dumper</option>
+                <option value="Cat 5">Minipelle</option>
+            </select>
+        </form>
+        <div class="header__nav">
+            <a href="./index.html" title="Accueil"><span class="material-symbols-rounded">home</span></a>
+            <a href="./login.html" title="Connexion"><span class="material-symbols-rounded">person</span></a>
+            <a href="./cart.html" title="Panier"><span class="material-symbols-rounded">shopping_cart</span></a>
+        </div>
+    </header>
+    <main>
+        <div class="wrap cf">
+            <h1 class="projTitle">Panier</h1>
+            <div class="heading">
+                <h1>Mon Panier</h1>
+                <a href="./index.html" class="continue">Continuer les achats</a>
+            </div>
+            <div class="cart">
+                <ul class="cartWrap">
+                    <li class="items">  
+                        <div class="infoWrap"> 
+                            <div class="cartSection">
+                                <img src="./assets/products/item3.jpg" alt="" class="itemImg" />
+                                <p class="itemNumber">#QUE-007544-001</p>
+                                <h3>KUBOTA-RT-2 : 26CV 360L</h3>
+                                <p><input type="number"  class="qty" placeholder="1"/> x 9 500 €</p>
+                                <p class="stockStatus">En Stock</p>
+                            </div>  
+                            <div class="prodTotal cartSection">
+                                <p>9 500 €</p>
+                            </div>
+                                <div class="cartSection removeWrap">
+                                <a href="#" class="remove">X</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items even">
+                        <div class="infoWrap"> 
+                            <div class="cartSection">
+                                <img src="./assets/products/item6.jpg" alt="" class="itemImg" />
+                                <p class="itemNumber">#QUE-007544-002</p>
+                                <h3>THWAITES-T350 : 3.5T</h3>
+                                <p><input type="number"  class="qty" placeholder="2"/> x 12 500 €</p>
+                                <p class="stockStatus">En Stock</p>
+                            </div>  
+                            <div class="prodTotal cartSection">
+                                <p>25 000 €</p>
+                            </div>
+                                <div class="cartSection removeWrap">
+                                <a href="#" class="remove">X</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items">
+                        <div class="infoWrap"> 
+                            <div class="cartSection">
+                                <img src="./assets/products/item8.jpg" alt="" class="itemImg" />
+                                <p class="itemNumber">#QUE-007544-003</p>
+                                <h3>Dynapac-CC1100</h3>
+                                <p><input type="number"  class="qty" placeholder="1"/> x 15 000 €</p>
+                                <p class="stockStatus out">Hors Stock</p>
+                            </div>  
+                            <div class="prodTotal cartSection">
+                                <p>15 000 €</p>
+                            </div>
+                            <div class="cartSection removeWrap">
+                                <a href="#" class="remove">X</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="promoCode">
+                <label for="promo">Code promo ?</label>
+                <div>
+                    <input type="text" name="promo"/>
+                    <a href="#" class="btn"></a>
+                </div>
+            </div>
+            
+            <div class="subtotal cf">
+                <ul>
+                    <li class="totalRow">
+                        <span class="label">Achats : </span>
+                        <span class="value">49 500 €</span>
+                    </li>
+                    <li class="totalRow">
+                        <span class="label">Livraison : </span>
+                        <span class="value">1256 €</span>
+                    </li>
+                    <li class="totalRow">
+                        <span class="label">TVA : </span>
+                        <span class="value">127 €</span>
+                    </li>
+                    <li class="totalRow final">
+                        <span class="label">Total : </span>
+                        <span class="value">50 883 €</span>
+                    </li>
+                    <li class="totalRow">
+                        <a href="./paiement.html" class="btn continue">Finaliser ma commande</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__top">
+            <div class="footer__map">
+                <h5>Site</h5>
+                <ul>
+                    <li>
+                        <a href="./index.html" title="Accueil">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="./login.html" title="Connexion">Connexion</a>
+                    </li>
+                    <li>
+                        <a href="./cart.html" title="Panier">Panier</a>
+                    </li>
+                    <li>
+                        <a href="./paiement.html" title="Paiement">Paiement</a>
+                    </li>
+                </ul>
+            </div>
+            <img src="./assets/logo-v.png" alt="Terratrucks" class="footer__logo">
+            <div class="footer__social">
+                <ul>
+                    <li><a href="https://instagram.com" title="Instagram"><img src="assets/icons/instagram.svg"></a></li>
+                    <li><a href="https://facebook.com" title="Facebook"><img src="assets/icons/facebook-f.svg"></a></a></li>
+                    <li><a href="https://twitter.com" title="X"><img src="assets/icons/x-twitter.svg"></a></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyrights">
+            Copyright 2023 Terratrucks. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
