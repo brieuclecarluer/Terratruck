@@ -1,0 +1,101 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 96px 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container form{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 24px rgba(0,0,0,.15);
+    padding: 20px;
+    width: calc(100% - 96px);
+    max-width: 480px;
+    padding-top: 130px;
+}
+
+.container form .inputBox{
+    margin-top: 24px;
+}
+
+.container form .inputBox span{
+    display: block;
+    color: #000;
+    padding-bottom: 8px;
+}
+
+/*Enlève les flèches des inputs number*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    appearance: textfield;
+}
+
+.container form .inputBox input,
+.container form .inputBox select{
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,.3);
+    outline: none;
+}
+
+.container form .flexbox{
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.container form .submit-btn{
+    border: none;
+    width: 100%;
+    background: var(--main);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.container form .submit-btn:hover{
+    background-color: #eb6d13;
+}
+
+/*Carte*/
+.container .card-container{
+    margin-bottom: -120px;
+    position: relative;
+    width: calc(100vw - 128px);
+    max-width: 364px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background:var(--main);
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container .card-container .image img{
+    height: 50px;
+}
+.container .card-container .card-number-box{
+    font-size: 22px;
+}
+.container .card-container .flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+.container .card-container .flexbox .box{
+    font-size: 15px;
+}
