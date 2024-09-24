@@ -1,0 +1,122 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Supprime les marges par défaut du body */
+    height: 100vh; /* Assure que le body occupe toute la hauteur de la fenêtre */
+}
+
+.container {
+    position: relative; /* Le conteneur doit être en position relative pour positionner le formulaire absolu */
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(50deg,rgb(224, 109, 42),rgb(219, 115, 55),rgb(240, 153, 53),rgb(223, 162, 77),rgb(240, 153, 53),rgb(219, 115, 55),rgb(224, 109, 42));
+}
+
+.Myspace {
+    position: absolute;
+    top: 30%;
+    z-index: 2;
+    display: inline-flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-family: 'Ms Madi', cursive;
+    font-size: xx-large;
+}
+.terr {
+    font-family: "Chunkfive", serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+
+.form {
+    position: absolute; /* Positionne le formulaire en tant que couche supérieure */
+    top: 50%; /* Place le formulaire au milieu vertical */
+    left: 50%; /* Place le formulaire au milieu horizontal */
+    transform: translate(-50%, -10%);
+    width: 600px;
+    height: 350px;
+    text-size-adjust: 200%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border-color:rgb(255, 255, 255);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 16px 0;
+}
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+}
+.form-input input {
+    box-sizing: border-box;
+    width: 400px;
+    height: 40px;
+    padding: 4px 12px;
+    border: 1px solid rgb(147, 147, 147);
+    border-radius: 5px;
+    font-weight: 400;
+    transition: border 1s;
+    outline: none;
+}
+.form-input input:hover {
+    border: 1px solid rgb(248, 135, 43);
+}
+
+.mdpo a {
+    font-size: small;
+    font-weight: 400;
+    color: rgb(147, 147, 147);
+    text-decoration: none;
+}
+.mdpo a:hover {
+    text-decoration: underline;
+}
+
+.Boutton {
+    width: 150px;
+    height: 50px;
+    color: #000;
+    font-size: large;
+    font-weight: 200;
+    background-color: var(--main);
+    border: 1px solid var(--main);
+    border-radius: 10px;
+    transition: background-color 0.6s;
+    cursor: pointer;
+}
+
+
+.Boutton:hover {
+    background-color: #ee690a;
+}
+
+
+@media screen and (max-width : 600px) {
+    main {
+        width: 100%;
+    }
+    .form {
+        width: 100%;
+    }
+    .form-input {
+        width: 80%;
+    }
+    .form-input input {
+        width: 100%;
+    }
+    .Myspace {
+        flex-wrap: wrap;
+        top: 25%;
+    }
+}
